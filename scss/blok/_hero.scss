@@ -1,0 +1,98 @@
+.header__hero{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    background-image: url(../../images/Bitmap\ \(1\).jpg);
+    background-size: 1440px;
+    &_text{
+        h1{
+            font-size: 50px;
+            margin-left: 200px;
+            color: white;
+        }
+    }
+    &_img{
+        color: white;
+        display: flex;
+    }
+    &_button{
+        .btn2{
+            font-weight: 700;
+            margin-left: 200px;
+            color: white;
+            width: 180px;
+            height: 55px;
+            background-color: #FCB72B;
+            border: none;
+            &:hover{
+                background-color: #bb9e66;
+            }
+            &:active{
+                background-color: transparent;
+                color: black;
+                border: 1px solid black;    
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1114px){
+    .header__hero{
+        width: 100%;
+        &_text{
+            width: 100%;
+            h1{
+                text-align: center;
+                margin: 0;
+                br{
+
+                }
+            }
+        }
+        &_img{
+            display: block;
+            text-align: center;
+            width: 100%;
+            align-items: center;
+            .st2{
+                display: none;
+            }
+            img{
+                position: absolute;
+                margin-left: -500px;
+                margin-top: 30px;
+            }
+        }
+        &_button{
+            margin-left: 100px;
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:429px){
+    .header__hero{
+        width: 100%;
+        &_text{
+            width: 100%;
+            h1{
+                br{
+                    display: none;
+                }
+            }
+        }
+        &_img{
+            width: 100%;
+        }
+        &_button{
+            width: 100%;
+            .btn2{
+                margin-left: 10px;
+            }
+        }
+    }
+}

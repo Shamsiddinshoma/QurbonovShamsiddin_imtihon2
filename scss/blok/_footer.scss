@@ -1,0 +1,130 @@
+.footer{
+    width: 100%;
+    height: 350px;
+    &_top{
+        color: white;
+        background-image: url(../../images/Mask\ \(2\).png);
+        display: flex;
+        width: 100%;
+        height: 80%;
+        &_l{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            h2{
+                font-size: 50px;
+            }
+        }
+        &_r{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            .img-box2{
+                width: 360px;
+                height: 66px;
+            }
+        }
+    }
+    &_bottom{
+        display: flex;
+        background-color: #333A44;
+        width: 100%;
+        height: 20%;
+        &_logo{
+            display: flex;
+            width: 30%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        &_list{
+            justify-content: space-between;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            &_item{
+                a{
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: white;
+                }
+                a:hover{
+                    color: rgb(185, 116, 81);
+                    border-bottom: 1px solid;
+                }
+                a:active{
+                    background-color: #939CAA;
+                    border-radius: 10px; 
+                }
+            }
+        }
+        &_contact{
+            justify-content: center;
+            display: flex;
+            width: 60%;
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width:1114px){
+    .footer{
+        width: 100%;
+        &_top{
+            text-align: center;
+            flex-direction: column;
+            width: 100%;
+            &_l{
+                width: 100%;
+            }
+            &_r{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:429px){
+    .footer{
+        height: 1000px;
+        &_top{
+            height: 40%;
+        }
+        &_bottom{
+            height: 60%;
+            flex-direction: column;
+            &_logo{
+                margin-left: 130px;
+            }
+            &_list{
+                margin-top: -30px;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                &_item{
+                    margin-top: 5px;
+                    a{
+                        font-weight: 600;
+                        font-size: 25px;
+                        color: #939CAA;
+                        margin-left: 150px;
+                    }
+                }
+            }
+            &_contact{
+                margin: 0 auto;
+            }
+        }
+    }
+}
